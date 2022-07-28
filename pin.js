@@ -78,14 +78,21 @@ function verifyPin(){
 
    const numberinput = document.getElementById('numbershow');
 
+
+   const pininput = document.getElementById('pinshow');
+
    if( genaratepins == calpin )
    {
     numberinput.value = '';
+
+    pininput.value ='';
+
     matchpin.style.display='block';
     notmatch.style.display='none';
    }
    else{
       numberinput.value = '';
+    //   pininput.value ='';
       notmatch.style.display='block';
       matchpin.style.display='none';
    }
