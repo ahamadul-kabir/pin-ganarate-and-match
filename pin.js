@@ -76,14 +76,16 @@ function verifyPin(){
    const notmatch = document.getElementById('Noverify');
 
 
+   const numberinput = document.getElementById('numbershow');
+
    if( genaratepins == calpin )
    {
-   
+    numberinput.value = '';
     matchpin.style.display='block';
     notmatch.style.display='none';
    }
    else{
-     
+      numberinput.value = '';
       notmatch.style.display='block';
       matchpin.style.display='none';
    }
